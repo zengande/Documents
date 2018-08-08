@@ -81,14 +81,14 @@ volumes:
 运行成功后可以在 <本地ip>:5100 访问UI
 
 ## 使用本地 Exceptionless 的配置
-1. 创建新的账号或者登录。
-2. 选择项目类型，这里使用的是 asp.net core。
-3. 引用 nuget包，程序包管理器控制台执行 `Install-Package Exceptionless.AspNetCore`， 也可以从 Nuget 上安装强名称程序包 `Exceptionless.AspNetCore.Signed`。
+1. 创建新的账号并登录 Exceptionless。
+2. 创建项目，获得 api 密钥。
+3. 引用 nuget包，程序包管理器控制台执行 `Install-Package Exceptionless.AspNetCore`，也可以从 Nuget 上安装强名称程序包 `Exceptionless.AspNetCore.Signed`。
 4. appSettings.json 的配置
 ``` json
 "Exceptionless": {
     // api 密钥
-    "ApiKey": "xDCAoTAteqTbscdJeBDCjMoKbshQYUyC7khhKFhc",`
+    "ApiKey": "xDCAoTAteqTbscdJeBDCjMoKbshQYUyC7khhKFhc",
     // api 暴露的地址
     "ServerUrl": "http://localhost:5000",
     "DefaultData": {
